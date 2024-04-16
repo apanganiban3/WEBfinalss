@@ -4,10 +4,11 @@
       { "src": "/api/countries", "dest": "server.js" },
       { "src": "/api/countries/:id", "dest": "server.js" },
       { "src": "/viewdata", "dest": "app.js" },
+      { "src": "/alldata", "dest": "app.js" },
       { "src": "/(.*)", "dest": "/index.html" },
-      { "src": "/(.*)", "dest": "/public/$1" },
-      { "src": "/server.js", "dest": "server.js", "use": "@vercel/node" },
-      { "handle": "filesystem" }
+      { "src": "/(.+\\html)", "dest": "$1" },
+      { "src": "/(.+\\html)", "dest": "$1" }
+
     ]
   }
   
