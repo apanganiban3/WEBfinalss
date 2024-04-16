@@ -1,12 +1,12 @@
 {
-    "version": 2,
-    "routes": [
-      { "src": "/api/countries", "dest": "server.js" },
-      { "src": "/api/countries/:id", "dest": "server.js" },
-      { "src": "/viewdata", "dest": "app.js" },
-      { "src": "/alldata", "dest": "app.js" },
-      { "src": "/(.+\\.html)", "dest": "/$1" },
-      { "src": "/(.*)", "dest": "/index.html" }
-    ]
-  }
-  
+  "version": 2,
+  "routes": [
+    { "src": "/api/countries", "dest": "server.js" },
+    { "src": "/api/countries/:id", "dest": "server.js" },
+    { "src": "/viewdata", "dest": "app.js" },
+    { "src": "/alldata", "dest": "app.js" },
+    { "src": "/(.+\\.html)", "dest": "/$1" },
+    { "src": "/(.+\\.json)", "dest": "/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
