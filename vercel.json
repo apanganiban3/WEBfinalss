@@ -7,6 +7,6 @@
     { "src": "/alldata", "dest": "app.js" },
     { "src": "/(.+\\.html)", "dest": "/$1" },
     { "src": "/(.+\\.json)", "dest": "/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  
   ]
 }
