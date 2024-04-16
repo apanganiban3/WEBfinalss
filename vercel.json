@@ -5,10 +5,8 @@
       { "src": "/api/countries/:id", "dest": "server.js" },
       { "src": "/viewdata", "dest": "app.js" },
       { "src": "/alldata", "dest": "app.js" },
-      { "src": "/(.*)", "dest": "/index.html" },
-      { "src": "/(.+\\html)", "dest": "$1" },
-      { "src": "/(.+\\html)", "dest": "$1" }
-
+      { "src": "/(.+\\.html)", "dest": "/$1" },
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
   
